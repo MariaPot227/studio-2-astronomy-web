@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <a href="index.html">Home</a>
-    <h2>Booking Form</h2>
-    <form>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="book.html">Booking</a>
+      <a href="hire.html">Hire equipment</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="main-content">
+      <h2>Booking Form</h2>
+      <form>
         <label for="firstname">First name:</label>
-        <input type="text" id="firstname" name="firstname" required /><br /><br />
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+        /><br /><br />
 
         <label for="lastname">Last name:</label>
         <input type="text" id="lastname" name="lastname" required /><br /><br />
@@ -19,27 +31,47 @@
         <input type="email" id="email" name="email" required /><br /><br />
 
         <fieldset>
-            <legend>What brings you here?</legend>
-            <input type="radio" id="photographer" name="reason" value="Photographer" required />
-            <label for="photographer">Photographer</label><br />
+          <legend>What brings you here?</legend>
+          <input
+            type="radio"
+            id="photographer"
+            name="reason"
+            value="Photographer"
+            required
+          />
+          <label for="photographer">Photographer</label><br />
 
-            <input type="radio" id="studying" name="reason" value="Studying Stars" />
-            <label for="studying">Studying Stars</label><br />
+          <input
+            type="radio"
+            id="studying"
+            name="reason"
+            value="Studying Stars"
+          />
+          <label for="studying">Studying Stars</label><br />
 
-            <input type="radio" id="watching" name="reason" value="Just to come and watch" />
-            <label for="watching">Just to come and watch</label><br />
+          <input
+            type="radio"
+            id="watching"
+            name="reason"
+            value="Just to come and watch"
+          />
+          <label for="watching">Just to come and watch</label><br />
 
-            <input type="radio" id="other" name="reason" value="Other" />
-            <label for="other">Other</label><br />
-        </fieldset><br />
+          <input type="radio" id="other" name="reason" value="Other" />
+          <label for="other">Other</label><br />
+        </fieldset>
+        <br />
 
         <label for="date">Date:</label>
         <input type="date" id="date" name="date" required /><br /><br />
 
         <label for="tour">Tour (Branch One):</label><br />
-        <textarea id="tour" name="tour" rows="3" cols="30" readonly>Branch One</textarea><br /><br />
+        <textarea id="tour" name="tour" rows="3" cols="30" readonly>
+Branch One</textarea
+        ><br /><br />
 
         <button type="submit">Confirm</button>
-    </form>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
