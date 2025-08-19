@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Photography Equipment Hire</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
+  <body>
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="book.html">Booking</a>
+      <a href="hire.html">Hire equipment</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="main-content">
+      <div class="container">
         <h1>Hire Photography Equipment</h1>
 
         <h2>Available Equipment</h2>
         <div class="equipment-list">
-            <div>
-                <span>Camera</span>
-                <button onclick="addToCart('Camera', 50)">Add to Cart</button>
-            </div>
-            <div>
-                <span>Tripod</span>
-                <button onclick="addToCart('Tripod', 10)">Add to Cart</button>
-            </div>
-            <div>
-                <span>Lighting Kit</span>
-                <button onclick="addToCart('Lighting Kit', 30)">Add to Cart</button>
-            </div>
-            <div>
-                <span>Lenses</span>
-                <button onclick="addToCart('Lenses', 40)">Add to Cart</button>
-            </div>
-            <div>
-                <span>External Flashes</span>
-                <button onclick="addToCart('External Flashes', 25)">Add to Cart</button>
-            </div>
+          <div>
+            <span>Camera</span>
+            <button onclick="addToCart('Camera', 50)">Add to Cart</button>
+          </div>
+          <div>
+            <span>Tripod</span>
+            <button onclick="addToCart('Tripod', 10)">Add to Cart</button>
+          </div>
+          <div>
+            <span>Lighting Kit</span>
+            <button onclick="addToCart('Lighting Kit', 30)">Add to Cart</button>
+          </div>
+          <div>
+            <span>Lenses</span>
+            <button onclick="addToCart('Lenses', 40)">Add to Cart</button>
+          </div>
+          <div>
+            <span>External Flashes</span>
+            <button onclick="addToCart('External Flashes', 25)">
+              Add to Cart
+            </button>
+          </div>
         </div>
 
         <div class="Camera">
-            <h2>Your Cart</h2>
-            <div id="cart">
-                <p>No items yet.</p>
-            </div>
+          <h2>Your Cart</h2>
+          <div id="cart">
+            <p>No items yet.</p>
+          </div>
         </div>
+      </div>
     </div>
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
