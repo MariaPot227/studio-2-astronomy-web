@@ -9,7 +9,7 @@ function updateCart() {
     const cartDiv = document.getElementById("cart");
 
     let total = 0;
-    let html = "<ul>";
+    let html = "<ul>"; //making an html list, add/remove items to this list
 
     for (let i = 0; i < cart.length; i++) {
         const c = cart[i];
@@ -23,5 +23,11 @@ function updateCart() {
     html += `<p><strong>Total: $${total}</strong></p>`;
     cartDiv.innerHTML = html;
 }
+
+function removeFromCart(index){
+    cart.splice(index, 1);
+    updateCart();
+}
+
 
 
